@@ -14,6 +14,11 @@ public class SpringBootDockerImageApplication {
         return "Hello World!";
     }
 
+    @GetMapping("/ping")
+    public String ping() {
+        return "the project is up and running!";
+    }
+
     public static void main(String[] args) {
         SpringApplication.run(SpringBootDockerImageApplication.class, args);
     }
